@@ -17,4 +17,4 @@ first_content = exract_flight_hiair_today('16','0')
 bot = telegram.Bot(token=os.environ.get('telegram_token'))
 chat_id = 1491027495 #bot.getUpdates()[-1].message.chat.id
 
-bot.sendMessage(chat_id=chat_id, text=total_content_clean)
+bot.sendMessage(chat_id=chat_id, text=first_content)
