@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '40 0,12 * * *'
+    - cron: '0 * * * *'
 
 jobs:
   run:
@@ -25,5 +25,4 @@ jobs:
       env:
         telegram_token: ${{ secrets.TELEGRAMTOKEN }}
       run: |
-        python flight_hiair_monday.py
-        python flight_hiair_thursday.py
+        python flight_hiair_today.py
